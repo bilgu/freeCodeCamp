@@ -10,6 +10,33 @@ We create 2 arrays : visited and distance, which record whether a vertex is visi
 We start from the source vertex. Let the current vertex be u and its adjacent vertices be v. Now for every v which is adjacent to u, the distance is updated if it has not been visited before and the distance from u is less than its current distance. Then we select the next vertex with the least distance and which has not been visited.
 
 Priority Queue is often used to meet this last requirement in the least amount of time. Below is an implementation of the same idea using priority queue in Java.
+``My Changes``
+Before Java code here is algorithm of Dijkstra.
+
+```
+    d[s]<--0
+
+  for each v∈ V -{S}
+
+       d[v]<--∞
+
+       S<--Ø
+
+        Q<--V
+
+   while Q!=Ø
+
+         u<--Extract_Min(Q)
+
+         S=S U {u}
+
+         for each v ∈ Adj[u]
+
+         if d[v]>d[u]+W(u,v)
+
+             d[v]<--d[u]+W(u,v)
+
+              (parent[v]<--u)  ```
 
 ```java
 import java.util.*;
