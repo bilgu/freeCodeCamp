@@ -20,8 +20,11 @@ $ npm install bulma
 ``My first changes``
 #Code Requirements
 -->For Bulma work correctly, you need to make your webpage Responsive.
+
    1-)Use the HTML5 doctype
    ` <!DOCTYPE html>`
+   
+   
    2-)Add the responsive viewport meta tag.
      `<meta name="viewport" content="width=device-width, initial-scale=1">
      
